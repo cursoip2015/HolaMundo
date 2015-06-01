@@ -1,0 +1,44 @@
+/* 6 tipos de buscar coincidencias para aplicar estilos*/
+
+p[class="texto"] { color: blue;}/*el valor sea texto*/
+
+p[class~="principal"] {font-size:40px;}/*que uno de los atributos sea principal*/
+
+.rojo {color: red}
+
+p[class|="texto"] {color: green;}/*palabra separada por guiones que comience por val*/
+
+p[class$="azul"] {color: blue}/*que finalice por azul*/
+
+p[class^="azul"] {color: blue}/*que empiece por azul*/
+
+p[class*="azul"] {color: blue}/*que azul este en cualquier posicion*/
+
+/* Herencia: hijos*/
+p > span 
+{
+	color: yellow;
+}
+
+/* Adyacentes */
+
+div + p
+{
+	color: orange;
+}
+
+/* Pseudo clases*/
+div .ejemplo p:FIRST-CHILD 
+{
+	color: orange;
+}
+
+a.linkvisited:link    { color: red; }
+a.linkvisited:visited { color: green; }
+
+a.hoveractivefocus:hover{color: brown;}
+a.hoveractivefocus:active{color: red;}
+a.hoveractivefocus:focus{color: yellow;}
+
+.lang p { color: green; }
+p:lang(es) { color: yellow; }

@@ -1,0 +1,367 @@
+/*   
+	version:  1.0
+	author:   Ander Uraga Real
+	date: 	  20150518
+		
+*/
+
+/* 
+   RESET    
+   Resetear todos los estilos para cualquier navegador
+*/
+@import url("reset.css");
+
+/* 
+
+   ETIQUETAS 
+   dar un estilo general o base a toda la Web	
+
+*/
+
+article
+{
+	border: 1px solid #013729;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+
+article h1
+{
+	background-color: #88ABCB;
+	color: C10D57;
+	font-size: 25px;
+	padding: 5px 0px;
+}
+
+body{
+	background: url('../img/back2.jpg');
+	font-family: arial;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	color: orange;
+}
+
+ol, ul {
+	list-style-type: disc;
+}
+
+li{ 
+	margin-bottom:8px;
+}
+
+ol h3, ul h3 {
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+ol ol, ul ul{
+	margin-left:20px;
+	list-style-type: circle;
+}
+
+h1 {	
+  font-size: 50px;
+  margin-bottom:20px;
+  color: green;
+  font-family: arial;
+  text-align: center;	
+}
+
+strong{
+	font-weight:bold;
+}
+
+p{
+	font-family: arial;
+	font-size:16px;
+	text-align:justify;
+	line-height:20px;
+}
+
+/*
+	VALIDACIONES FORMULARIOS
+*/
+
+form input[type="text"]:valid
+{
+	border:  2px solid green;
+	color: green;
+}
+
+form input[type="text"]:focus:invalid
+{
+	border:  2px solid red;
+	color: red;
+}
+
+/* 
+	ESTILOS REUTILIZABLES
+    Regla con selector por CLASS para usar en todas las páginas
+*/
+
+table.tabla_azul, .tabla_azul tr, .tabla_azul td{
+	border:1px solid grey;
+	text-align: center;
+	font-family: arial;
+	font-size: 35px;  
+	color: #0099FF;    
+}
+
+.tabla_azul th, .tabla_azul td {
+  padding: 10px;  
+  height: 40px;
+}
+
+.tabla_azul th{
+  color: grey;	
+}
+
+
+.btn_volver{
+	background-color:#DDDDDD;
+}
+
+.numero{
+  color: #0099FF;
+  font-family: arial;
+  font-size: 150px;
+}
+
+.verde{
+	color:green;	
+}
+
+.cartel{
+	float:left;
+	margin-right:30px;
+	width:250px;
+	height:auto;
+}
+
+/*
+	PAGINAS
+	Tendremos una seccion por cada pagina de nuestra Web
+
+*/
+
+/*  NAV  */
+
+#logo img{
+	width: 35px;
+	height: 35px;
+}
+
+/* FOOTER */
+
+footer
+{
+	text-align: center;
+}
+
+footer img
+{
+	height: 25px;
+}
+
+/* HOME */
+#home{
+
+}
+
+section
+{
+	text-align: center;
+}
+
+section #titulo
+{
+	font-size: 50px;
+}
+
+section table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+aside
+{
+	text-align: center;
+}
+
+/* CARTELERA */
+#cartelera li h3{
+  color: #0076EC;
+  font-family: "dinengschriftstd", "Another Font", generic;
+  font-size: 25px;
+  font-weight: bold;  
+}
+
+#cartelera li h3:hover{
+	color: orange;
+}
+
+
+/* CARTELERA_DETALLE */
+#cartelera_detalle h1{
+	color:blue;
+	text-align:left;
+}
+
+/* DATOS PERSONALES */
+
+#formulario1
+{
+	margin: 25px;
+}
+
+span 
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+fieldset
+{
+	border: 1px solid blue;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+}
+
+legend
+{
+	font-weight: bold;
+}
+
+h2 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
+label 
+{
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+input[type="text"]
+{
+    border: 1px solid #CCC;
+    color: #888;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+select 
+{
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 25%;
+    line-height:15px;
+}
+
+textarea
+{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+.button 
+{
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+}
+
+.button:hover 
+{
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+/* Regla con selector por ID */
+#dado
+{
+	width:200px;
+	height: 200px;
+}
+
+#encabezado
+{
+	border:5px dotted green;
+	
+}
+
+#container{
+	width:900px;
+	background-color:#FFF;
+	min-height:700px;
+	margin:0 auto;	
+	padding:0 20px;
+	border-right:1px solid grey;
+	border-left:1px solid grey;
+	clear:both;
+}
+
+
+
+#ficha{
+	/*float:left;*/
+	width:580px;
+	min-height: 360px;
+	margin-bottom: 20px;	
+	
+}
+
+#ficha p{
+	
+	font-size:35px;
+	line-height:45px;
+}
+
+#ficha .destacado{
+	color:green;
+	font-weight:600;
+}
+
+#sinopsis{
+  /*float: left;*/
+  height: 200px;
+  overflow: scroll;
+}
+
+/*		FIGURE		*/
+figure
+{
+	margin: 25px;
+}
+
+
+
