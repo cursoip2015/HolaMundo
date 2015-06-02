@@ -41,4 +41,4 @@ a.hoveractivefocus:active{color: red;}
 a.hoveractivefocus:focus{color: yellow;}
 
 .lang p { color: green; }
-p:lang(es) { color: yellow; }
+p:lang(es) { color: magenta; }

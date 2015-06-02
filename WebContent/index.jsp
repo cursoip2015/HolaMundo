@@ -74,6 +74,8 @@
 	   			<li><a href="https://github.com/" target="blank">GitHub</a>
 	   			<li><a href="http://librosweb.es/libro/css/" target="blank">CSS basico</a>
 	   			<li><a href="http://librosweb.es/libro/css_avanzado/" target="blank">CSS avanzado</a>
+	   			<li><a href="http://es.learnlayout.com/clearfix.html" target="blank">Clearfix auto</a>
+	   			<li><a href="http://jps.com.ve/flotando-elementos-en-css-y-la-magia-de-clearfix/" target="blank">Clearfix con CSS</a>
 	   		</ul>
 		</aside>
 	   
