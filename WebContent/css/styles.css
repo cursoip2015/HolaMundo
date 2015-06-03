@@ -46,24 +46,6 @@ a:hover{
 	color: orange;
 }
 
-ol, ul {
-	list-style-type: disc;
-}
-
-li{ 
-	margin-bottom:8px;
-}
-
-ol h3, ul h3 {
-	font-weight:bold;
-	margin-bottom:15px;
-}
-
-ol ol, ul ul{
-	margin-left:20px;
-	list-style-type: circle;
-}
-
 h1 {	
   font-size: 50px;
   margin-bottom:20px;
@@ -151,10 +133,77 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 
 /*  NAV  */
 
+.navegacion
+{
+	margin: 40px;
+	
+}
+
+.wrapper 
+{
+		height: 100px;             /* height = H1 */
+		width: 600px;							 /* width  = W1 */
+ 
+		position: absolute;        /* we want it to be absolutely centered */
+		left: 50%;                 /* with these two lines i set the begining of the div in the center of screen */
+															/* but I have to "correct" it because I do not want the *BEGINING* to be centered. But the div itself. */
+		margin-left: -300px;      /* correct1-> set to left W1/2 so that the middle point of the div is centered horizontally */
+		margin-top: -50px;       /* correct2-> set to top H1/2 so that the midddle point of the div is centered vertically */
+ 
+}
+
 #logo img{
 	width: 35px;
 	height: 35px;
 }
+			
+			.header {
+				margin:auto;
+				width:800px;
+				font-family:Arial, Helvetica, sans-serif;
+				position: fixed;
+				top: 50px;
+				z-index: 10;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			nav > ul > li {
+				float:left;
+			}
+			
+			nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			nav li a:hover {
+				background-color:#434343;
+			}
+			
+			nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			nav li:hover > ul {
+				display:block;
+			}
+			
+			nav li ul li {
+				position:relative;
+			}
+			
+			nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
 
 /* FOOTER */
 
@@ -169,13 +218,57 @@ footer img
 }
 
 /* HOME */
-#home{
 
+#home
+{
+	overflow: auto;
 }
 
-section
+#section_index, #aside_index_right
 {
-	text-align: center;
+	float: left;
+}
+
+#section_index
+{
+	width: 70%;
+	margin-right: 2%;
+	background-color: green;
+}
+
+#aside_index_right
+{
+	width: 25%;
+	background-color: lime;
+}
+
+/*CSS3buttongenerator*/
+#btn_ganador {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #000000;
+  font-family: Arial;
+  color: #bef1fa;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btn_ganador:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 section #titulo
@@ -189,12 +282,51 @@ section table
 	margin-right: auto;
 }
 
-aside
+/* CARTELERA */
+
+.relative
 {
-	text-align: center;
+	position: relative;
 }
 
-/* CARTELERA */
+.absolute
+{
+	position: absolute;
+	display: none;
+	bottom: -20px;
+	z-index: 20;
+}
+
+.relative:hover .absolute
+{
+	display: block;
+	opacity: 1;
+}
+
+.imagen
+{
+	position: relative;
+}
+
+.texto
+{
+	position: absolute;
+	display: none;
+	bottom: 50px;
+}
+
+.imagen:hover .texto
+{
+	background-color: red;
+	display: block;
+}
+
+#cartelera > ul > li
+{
+	margin: 20px;
+	float: left;
+}
+
 #cartelera li h3{
   color: #0076EC;
   font-family: "dinengschriftstd", "Another Font", generic;
@@ -363,5 +495,8 @@ figure
 	margin: 25px;
 }
 
-
+.clearfix 
+{
+  overflow: auto;
+}
 

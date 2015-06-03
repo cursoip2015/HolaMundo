@@ -33,9 +33,6 @@
 		</noscript>
 	
 		<header>
-			<a href="" title="Volver a la home">
-				<img src="img/dado.png" alt="dado de 6 caras icono de la app web"/>
-			</a>
 			
 			<h1>Ejemplos de HTML5, CSS3 y JS</h1>
 			

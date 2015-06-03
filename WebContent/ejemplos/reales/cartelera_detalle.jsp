@@ -1,30 +1,7 @@
-<!doctype html>
+<jsp:include page="../../plantillas/head.jsp"></jsp:include>
+<jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<html lang="es">
-
-<head>
-  <meta charset="utf-8">
-
-  <title>Det&aacute;lle Pelicula</title>
-  <meta name="description" content="Detalle de la pelicula">
-  <meta name="author" content="Ander Uraga Real">
-
-  <link rel="stylesheet" type="text/css" href="../../css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  
-</head>
-
-<body>
-
-<div id="container">
   <div id="cartelera_detalle">
-	  
-		<div class="btn_volver">
-			<a href="../../index.html">Volver</a>	
-		</div>	
 			
 		<h1>Cronicas de Narnia</h1>
 		
@@ -51,12 +28,8 @@
 		
 		
   </div> <!-- cartelera_detalle -->  
-</div> <!-- container -->  
- 
-  <script type="text/javascript" src="../../js/main.js"></script>
-  
-</body>
-</html>
+
+<jsp:include page="../../plantillas/footer.jsp"></jsp:include>
 
 
 
