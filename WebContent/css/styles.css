@@ -42,8 +42,14 @@ a{
 	text-decoration:none;
 }
 
-a:hover{
+a:hover
+{
 	color: orange;
+}
+
+a:hover:after
+{ 
+	content: " (" attr(href) ") "; 
 }
 
 h1 {	
@@ -111,18 +117,11 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 .numero{
   color: #0099FF;
   font-family: arial;
-  font-size: 150px;
+  font-size: 50px;
 }
 
 .verde{
 	color:green;	
-}
-
-.cartel{
-	float:left;
-	margin-right:30px;
-	width:250px;
-	height:auto;
 }
 
 /*
@@ -217,6 +216,34 @@ footer img
 	height: 25px;
 }
 
+.icon_facebook
+{
+	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 0 0;
+	padding: 1em 0 1em 84px; 
+	display: block;
+}
+
+.icon_facebook:hover
+{
+	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 84 84;
+	padding: 1em 0 1em 84px; 
+	display: block;
+}
+
+.icon_twitter
+{
+	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 0 0;
+	padding: 1em 0 1em 84px; 
+	display: block;
+}
+
+.icon_youtube
+{
+	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 0 0;
+	padding: 1em 0 1em 84px; 
+	display: block;
+}
+
 /* HOME */
 
 #home
@@ -284,26 +311,7 @@ section table
 
 /* CARTELERA */
 
-.relative
-{
-	position: relative;
-}
-
-.absolute
-{
-	position: absolute;
-	display: none;
-	bottom: -20px;
-	z-index: 20;
-}
-
-.relative:hover .absolute
-{
-	display: block;
-	opacity: 1;
-}
-
-.imagen
+/*.imagen
 {
 	position: relative;
 }
@@ -321,23 +329,54 @@ section table
 	display: block;
 }
 
-#cartelera > ul > li
+.cartel{
+	float:left;
+	margin-right:30px;
+	width:250px;
+	height:auto;
+}
+
+*/
+
+#cartelera li
 {
-	margin: 20px;
 	float: left;
+	width: 30%;
+	margin-right: 2%;
 }
 
-#cartelera li h3{
-  color: #0076EC;
-  font-family: "dinengschriftstd", "Another Font", generic;
-  font-size: 25px;
-  font-weight: bold;  
+#cartelera li:nth-child(3n+0)
+{
+	margin-right: 0px;
 }
 
-#cartelera li h3:hover{
-	color: orange;
+#cartelera .cartel
+{
+	position: relative;
+	width: 200px;
 }
 
+#cartelera .titulo
+{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	width: 90%;
+	padding: 3% 5%;
+	min-height: 40px;
+	display: none;
+}
+
+#cartelera .cartel:hover .titulo
+{
+	display: block;
+}
+
+#cartelera .titulo h3
+{
+	text-align: center;
+	color: #0099FF;
+}
 
 /* CARTELERA_DETALLE */
 #cartelera_detalle h1{
@@ -500,3 +539,27 @@ figure
   overflow: auto;
 }
 
+/* #####################
+	sprite_fantasma.jsp
+   ##################### */
+   
+.icon_pacman
+{
+	background: url(../img/sprite_fantasma.png) #f6e2b9 no-repeat 0 0;
+	padding: 2em 0 1em 50px; 
+	display: block;
+}
+
+.icon_fantasma
+{
+	background: url(../img/sprite_fantasma.png) #f6e2b9 no-repeat 0 -50px;
+	padding: 2em 0 1em 50px; 
+	display: block;
+}
+
+.icon_robot
+{
+	background: url(../img/sprite_fantasma.png) #f6e2b9 no-repeat 0 -100px;
+	padding: 2em 0 1em 50px; 
+	display: block;
+}

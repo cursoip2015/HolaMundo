@@ -2,7 +2,7 @@
 	<jsp:include page="plantillas/nav.jsp"></jsp:include>
 
 	<!-- Contenido principal de la pagina  -->
-	<div id="home">
+	<div id="home" class="clearfix">
 		<section id="section_index">
 			<h2>Suerte</h2>
 	

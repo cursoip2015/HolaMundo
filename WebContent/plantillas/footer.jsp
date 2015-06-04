@@ -9,9 +9,9 @@
 			</ul>	
 			
 			<ul id="list_rrss">
-				<li><a href="http://www.facebook.com"><img src="img/facebook.jpg" alt="icono de facebook"/></a></li>
-				<li><a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="icono de twitter"/></a></li>
-				<li><a href="http://www.youtube.com"><img src="img/youtube.jpg" alt="icono de youtube"/></a></li>
+				<li><a href="http://www.facebook.com" class="icon_facebook"></a></li>
+				<li><a href="http://www.twitter.com" class="icon_twitter"></a></li>
+				<li><a href="http://www.youtube.com" clas="icon_youtube"></a></li>
 			</ul>	
 			
 		</footer>

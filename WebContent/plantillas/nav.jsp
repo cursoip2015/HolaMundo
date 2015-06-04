@@ -63,7 +63,12 @@
 						<li><a href="ejemplos/css/posicionamientoCSS/float.jsp">Elementos flotantes</a></li>
 					</ul>
 				</li>
-				
+				<li><a href="">Tecnicas avanzadas</a>
+					<ul>
+						<li><a href="ejemplos/tecnicas_avanzadas/font_awesome.jsp">Font-awesome</a></li>
+						<li><a href="ejemplos/tecnicas_avanzadas/sprite_fantasma.jsp">Sprite-fantasma</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	<br/>
