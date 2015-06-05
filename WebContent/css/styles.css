@@ -216,31 +216,57 @@ footer img
 	height: 25px;
 }
 
+footer #list_rrss li
+{
+	width: 84px;
+	height: 84px;
+}
+
 .icon_facebook
 {
-	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 0 0;
-	padding: 1em 0 1em 84px; 
+	background: url(../img/mini-social-icons.png) no-repeat 0 0;
+	height: 24px;
+	padding: 2em 0 1em 84px; 
 	display: block;
 }
 
 .icon_facebook:hover
 {
-	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 84 84;
-	padding: 1em 0 1em 84px; 
+	background: url(../img/mini-social-icons.png) no-repeat 0 -84px;
+	height: 24px;
+	padding: 2em 0 1em 84px; 
 	display: block;
 }
 
 .icon_twitter
 {
-	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 0 0;
-	padding: 1em 0 1em 84px; 
+	background: url(../img/mini-social-icons.png) no-repeat -672px 0;
+	height: 24px;
+	padding: 2em 0 1em 84px; 
+	display: block;
+}
+
+.icon_twitter:hover
+{
+	background: url(../img/mini-social-icons.png) no-repeat -672px -84px;
+	height: 24px;
+	padding: 2em 0 1em 84px; 
 	display: block;
 }
 
 .icon_youtube
 {
-	background: url(../img/mini-social-icons.png) #f6e2b9 no-repeat 0 0;
-	padding: 1em 0 1em 84px; 
+	background: url(../img/mini-social-icons.png) no-repeat -840px 0;
+	height: 24px;
+	padding: 2em 0 1em 84px; 
+	display: block;
+}
+
+.icon_youtube:hover
+{
+	background: url(../img/mini-social-icons.png) no-repeat -840px -84px;
+	height: 24px;
+	padding: 2em 0 1em 84px; 
 	display: block;
 }
 
