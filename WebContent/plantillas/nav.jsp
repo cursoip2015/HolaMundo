@@ -69,6 +69,11 @@
 						<li><a href="ejemplos/tecnicas_avanzadas/sprite_fantasma.jsp">Sprite-fantasma</a></li>
 					</ul>
 				</li>
+				<li><a href="">Javascript</a>
+					<ul>
+						<li><a href="ejemplos/javascript/declaracion_de_variables.jsp">Declaracion de variables</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	<br/>
