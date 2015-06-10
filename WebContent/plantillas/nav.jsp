@@ -74,6 +74,11 @@
 						<li><a href="ejemplos/javascript/declaracion_de_variables.jsp">Declaracion de variables</a></li>
 					</ul>
 				</li>
+				<li><a href="">QUnit</a>
+					<ul>
+						<li><a href="ejemplos/qunit/test.jsp">Qunit</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	<br/>
