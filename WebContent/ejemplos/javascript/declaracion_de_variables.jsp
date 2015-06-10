@@ -29,7 +29,7 @@
 			//operaciones para el primer parametro
 			const INCREMENTO 	= 5;
 			const DECREMENTO 	= 6;
-			const ES_PAR 		= 6;
+			const ES_PAR 		= 7;
 			
 			//Calcula la operacion solicitada para los dos parametros
 			function calculadora(p1, p2, op)
@@ -41,30 +41,49 @@
 					case 0:
 					{
 						resultado = p1 + p2;
+						break;
 					}
 					case 1:
 					{
 						resultado = p1 - p2;
+						break;
 					}
 					case 2:
 					{
 						resultado = p1 * p2;
+						break;
 					}
 					case 3:
 					{
 						resultado = p1 / p2;
+						break;
 					}
 					case 4:
 					{
 						resultado = p1 % p2;
+						break;
 					}
 					case 5:
 					{
-						resultado = p1 - p2;
+						resultado = p1 + 1;
+						break;
 					}
 					case 6:
 					{
-						resultado = p1 - p2;
+						resultado = p1 - 1;
+						break;
+					}
+					case 7:
+					{
+						if (p1%2==0)
+						{
+							resultado = true;	
+						}
+						else
+						{
+							resultado = false;
+						}
+						break;
 					}
 				}
 				
@@ -73,8 +92,10 @@
 			
 			console.info('El \'resultado\':\n\t es igual a: ' + sumar(1, 3));
 			console.info('\nCalculadora \n');
-			console.info('\t5+5='	+	calculadora(5, 5, SUMAR));
+			console.info('\t5+6='	+	calculadora(5,   6, SUMAR));
 			console.info('\t10-67='	+	calculadora(10, 67, RESTAR));
+			console.info('\t8 decremento='	+	calculadora(8, 0, DECREMENTO));
+			console.info('\t5 es_par?='	+	calculadora(5, 0, ES_PAR));
 			
 		</script>
 
