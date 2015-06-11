@@ -74,6 +74,10 @@
 						<li><a href="ejemplos/javascript/declaracion_de_variables.jsp">Declaracion de variables</a></li>
 						<li><a href="ejemplos/javascript/test.jsp">Qunit</a></li>
 						<li><a href="ejemplos/javascript/objetos_basicos.jsp">Objetos basicos javascrit</a></li>
+						<li><a href="ejemplos/javascript/objeto_window.jsp">Objeto window</a></li>
+						<li><a href="ejemplos/javascript/objeto_document.jsp">Objeto document</a></li>
+						<li><a href="ejemplos/javascript/objeto_location.jsp">Objeto location</a></li>
+						<li><a href="ejemplos/javascript/objeto_screen.jsp">Objeto screen</a></li>
 					</ul>
 				</li>
 			</ul>
