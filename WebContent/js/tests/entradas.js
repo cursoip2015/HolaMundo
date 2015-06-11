@@ -50,25 +50,14 @@ function entradas(dia, edad)
 	return entrada;
 }
 
-
 function checkNumber( my_string )
 {
   return ( parseFloat( my_string ) == my_string ? true : false );
 }
 
-test( 'entradas', function() 
+QUnit.test( "entradas", function( assert ) 
 {
-  ok( checkNumber( 0 ) );
-  ok( checkNumber( 2 ) );
-  ok( checkNumber( -4 ) );
-  ok( checkNumber( 1 ) );
-  ok( checkNumber( 'asdf' ) );
-  ok( !checkNumber( 'asdf' ) );
-} );
-
-QUnit.test( "hello test", function( assert ) 
-{
-	assert.ok( 1 == "1", "Passed!" );
+	assert.ok( entradas("lunes", 20) == 2, "Correcto" );
+	
 });
-
 

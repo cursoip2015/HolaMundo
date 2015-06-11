@@ -11,6 +11,7 @@
 			
 	  	<script src="js/qunit-1.18.0/qunit-1.18.0.js"></script>
 	  	<script src="js/tests/test.js"></script>
+	  	<script src="js/tests/entradas.js"></script>
 
 	</section>
 	   
