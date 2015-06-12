@@ -34,6 +34,9 @@
 						<input type="button" id="w_links_list" value="document.links()"></input>
 					</li>
 				</ul>
+				
+				
+				
 				<script type="text/javascript">
 				
 					var btn_w_bgColor = document.getElementById("w_bgColor");

@@ -28,6 +28,16 @@
 						window.close();
 					};
 					
+					//Pequeño hack para que no se pueda redimensionar la ventana
+					window.onresize = function()
+					{
+						window.resizeTo(500,500);
+					}
+					window.onclick = function()
+					{
+						window.resizeTo(500,500);
+					}
+					
 				</script>
 			</div>
 		</article>

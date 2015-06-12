@@ -15,6 +15,18 @@
 				<h2>Window mensajes</h2>
 				<ul>
 					<li>
+						<strong>location:</strong>
+						<span id="w_location"></span>
+					</li>
+					<li><strong>name:</strong>
+						<span id="w_name"></span>
+						<p><code>document.title</code>para el nombre de la pestaña</p>
+					</li>
+					<li>
+						<span>window.open </span><input type="button" id="w_open" value="window.open(url, nombre, opciones)">
+						<span>No funciona <code>resizable=no</code>  por lo cual hemos metido javascript en la nueva_ventana.jsp</span>
+					</li>
+					<li>
 						<input type="button" id="w_alert" value="window.alert()"></input>
 					</li>
 					<li>
@@ -67,6 +79,19 @@
 						}
 					};  
 				
+					var span_location = document.getElementById("w_location");
+					span_location.innerHTML = window.location;
+					
+					document.getElementById("w_name").innerHTML = window.name;
+					
+					///Obtener boton
+					var btn_w_open = document.getElementById("w_open");
+					btn_w_open.onclick =  function()
+					{
+						console.info('Hemos hecho click');
+						window.open("ejemplos/javascript/nueva_ventana.jsp","nueva_ventana","heigth=600px, width=600px, menubar=no, toolbar=no, resizable=0");
+					};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+					
 				</script>
 			</div>
 		</article>

@@ -38,6 +38,11 @@ body{
 	font-family: arial;
 }
 
+#objeto_document body
+{
+	background-image: none !important;
+}
+
 a{
 	text-decoration:none;
 }

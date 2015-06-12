@@ -78,6 +78,7 @@
 						<li><a href="ejemplos/javascript/objeto_document.jsp">Objeto document</a></li>
 						<li><a href="ejemplos/javascript/objeto_location.jsp">Objeto location</a></li>
 						<li><a href="ejemplos/javascript/objeto_screen.jsp">Objeto screen</a></li>
+						<li><a href="ejemplos/javascript/objeto_navigator.jsp">Objeto navigator</a></li>
 					</ul>
 				</li>
 			</ul>
